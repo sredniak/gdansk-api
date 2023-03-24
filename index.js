@@ -19,14 +19,17 @@ async function getData() {
     const data = await response.json();
 
     
+
+    
     axios.get(API_URL).then(res => {
     
 
         inputValue.textContent = `Numer twojej karty: ${inputCardNumber}`
 
-        date.textContent = `Wazny do: ${res.data.karty[inputCardNumber].bilety[0].WaznyDo}`;
+        
+        taryfa.textContent = `Taryfa: ${res.data.karty[inputCardNumber].bilety[0].Taryfa}`;
         strefa.textContent = `Strefa: ${res.data.karty[inputCardNumber].bilety[0].Strefa}`;
-        taryfa.textContent = `Taryfa: ${res.data.karty[inputCardNumber].bilety[0].Taryfa}`;        
+        date.textContent = `Ważny do: ${res.data.karty[inputCardNumber].bilety[0].WaznyDo}`;        
 
         
     })

@@ -8,40 +8,39 @@
     <title>Sprawdź bilet - Gdańsk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row text-center">
-            <!-- <input type="text">
-            <button class="btn btn-primary">Sprawdź</button> -->
-            <h1>Sprawdź ważność karty miejskiej <br>Gdańsk i Gdynia</h1>
-            <hr>
-            <p class="text">Otwarte dane ZTM w Gdańsku - <a
-                    href="https://ckan.multimediagdansk.pl/dataset/tristar/resource/5552f5f2-1e3f-4aa4-9042-2853faccb418"
-                    target="_blank">Otwarty Gdańsk</a></p>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Wprowadź numer karty">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sprawdź</button>
-                </div>
+    <section>
+        <div class="card">
+            <p class="title">Karta miejska / City Card</p>
+            <div class="text-center">
+                <input class="input" placeholder="WPROWADŹ NUMER KARTY">
+                <button class="check">SPRAWDŹ</button>
             </div>
-            <div class="alert alert-primary col-lg-6 col-md-12 col-sm-12" role="alert">
-                <h3 class="input-value"></h3>
-                <p class="taryfa"></p>
-                <p class="strefa"></p>
-                <p class="date"></p>
-            </div>
-
-
-
         </div>
-    </div>
+        <div class="card-2">
+            <div class="col-lg-12 col-md-12 col-sm-12" role="alert">
+                <h3 class="input-value text-center"></h3>
+                <hr>
+                <p class="taryfa data"></p>
+                <p class="strefa data"></p>
+                <p class="date data"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Sprawdź ważność karty miejskiej - Gdańsk i Gdynia.
+        </p>
+        <p class="text">Otwarte dane ZTM w Gdańsku - <a
+        href="https://ckan.multimediagdansk.pl/dataset/tristar/resource/5552f5f2-1e3f-4aa4-9042-2853faccb418"
+        target="_blank"><b>Otwarty Gdańsk</b></a></p>
+        <p>Aktualizacja zbioru odbywa się codziennie ok. godz. 6:00.</p>
+    </footer>
 
 
 
