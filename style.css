@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+  body{
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .row{
+    margin-top: 100px;
+  }
+
+.form-control{
+    font-size: 24px;
+}
+.alert{
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
